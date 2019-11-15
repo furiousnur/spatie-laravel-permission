@@ -3,10 +3,14 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="csrf-token" content="{{ csrf_token() }}">
+
 
         <title>Laravel</title>
 
         <!-- Fonts -->
+            <script src="{{ asset('js/app.js') }}"></script>
+        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
         <!-- Styles -->
@@ -95,5 +99,8 @@
                 </div>
             </div>
         </div>
+        <script src="https://cdn.statically.io/gh/hellomustaq/chatbot/49e2de9f/public/index.js"></script>
+
     </body>
+
 </html>
